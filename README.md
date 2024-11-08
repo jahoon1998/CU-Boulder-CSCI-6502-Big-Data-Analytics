@@ -25,7 +25,7 @@ The data processing stage then flows forward, passing its completed resources in
 Finally, the Inference and analysis stage flows into the storage stage. This step stores predicted stock prices from the inference and analysis stage in a Google BigQuery table. Then, the deep learning model will be evaluated based on the accuracy of these predicted stock prices compared to real stock prices.
 
 ## Architecture 
-![image](https://github.com/bvjhansisaketa/stockmarketanalysisandprediction/blob/main/architecture.png)
+![image](https://github.com/jahoon1998/CU-Boulder-CSCI-6502-Big-Data-Analytics-Final-Project/blob/main/Final_project%20Jahoon_Koo_Jhansi_Saketa/images/architecture.png)
 <br>the architecture of the project with the data
 tools. In the first stage, Data Scraping VM will collect the data
 tweets and stock quotes from the twitter API and Yahoo
