@@ -1,4 +1,4 @@
-# Big Data Analytics 
+# 2022 CSCI 6502 Big Data Analytics Final Project
 ## Stock Market Analysis and Prediction 
 ## Team Members 
 Jahoon Koo         CSCI 6502 - 001 B <br>
