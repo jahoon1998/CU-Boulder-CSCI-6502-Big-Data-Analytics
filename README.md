@@ -34,21 +34,7 @@ Our workflow for stock market prediction and analysis comprises five general ste
 
 ## Architecture 
 ![image](https://github.com/jahoon1998/CU-Boulder-CSCI-6502-Big-Data-Analytics-Final-Project/blob/main/Final_project%20Jahoon_Koo_Jhansi_Saketa/images/architecture.png)
-<br>The architecture of the project with the data
-tools. In the first stage, Data Scraping VM will collect the data
-tweets and stock quotes from the twitter API and Yahoo
-Finance respectively. The VM will run the program for an hour
-and collect the twitter tweets for an hour. After an hour it
-calculates the polarity for all tweets by performing sentiment
-analysis using the textblob python library. The polarity is then
-combined with the stock quotes and then in the second stage
-using Pub/Sub it sends the data to the MiddleMan VM.
-The trained deep learning model (LSTM) is deployed in the AI
-Platform of the Google Cloud Platform. The MiddleMan VM,
-after receiving the data from the Pub/Sub, predicts the stock
-rate of the Apple organization using the deployed model in the
-AI Platform. After the prediction, the data is sent to the Big
-Query table. 
+<br>The architecture of the project involves several data tools. In the first stage, a Data Scraping VM collects tweets and stock quotes from the Twitter API and Yahoo Finance, respectively. The VM runs a program for one hour to collect Twitter data, after which it calculates the polarity of all tweets by performing sentiment analysis using the TextBlob Python library. The polarity is then combined with stock quotes, and in the second stage, Pub/Sub sends the data to the MiddleMan VM. The trained deep learning model (LSTM) is deployed on the AI Platform of Google Cloud Platform. After receiving the data from Pub/Sub, the MiddleMan VM predicts the stock rate of Apple using the deployed model on the AI Platform. Following the prediction, the data is sent to a BigQuery table.
 ## Prediction by LSTM
 ![image](https://github.com/jahoon1998/CU-Boulder-CSCI-6502-Big-Data-Analytics-Final-Project/blob/main/Final_project%20Jahoon_Koo_Jhansi_Saketa/images/prediction_by_lstm.png)
 ## Final Results 
