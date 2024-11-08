@@ -17,7 +17,7 @@ The Data is then going to be pre-processed and the Deep
 learning model is going to use numerical and text features
 extracted from data sources to predict the stock market rates
 ## Methodology
-the workflow we have designed for our stock market prediction and analysis application. There are five steps present at the general-level of this workflow. There is some degree of variability within this workflow because the specific cloud tools can be varied based on the need of the application and the cost of cloud tools.
+The workflow we have designed for our stock market prediction and analysis application. There are five steps present at the general-level of this workflow. There is some degree of variability within this workflow because the specific cloud tools can be varied based on the need of the application and the cost of cloud tools.
 The workflow begins with data scraping. This step encapsulates the definition of technologies and methods used for taking in the source data. This includes data scraping from both Twitter and a Finance website. This incoming data will be applied to the deep learning model during the analysis and inference stage. This step requires Cloud VMs to run Twitter API and Finance API scripts to continuously scrape data from sources. Google Cloud Compute Engine is a considerable service to host VMs.  
 The Data Scraping stage passes forward into the Data Streaming. This stage encapsulates the technologies and methods used for streaming the input data from two data sources to a cloud data processing tool. This stage requires the ability to stream data from multiple sources simultaneously. Also, the scalability and performance of the data streaming tool are important.  Google Cloud PubSub is a good candidate for now.  
 The data streaming stage then flows forward, delivering incoming data into the data processing stage. This stage encapsulates the technologies and methods used for transforming the input data and the data used for training models before the application and deep learning model respectively are able to operate. This stage may need two separate Cloud Data processing systems depending on the complexity of data coming from two sources. Google Cloud Dataflow is a suitable data processing tool for our project.
@@ -42,6 +42,6 @@ rate of the Apple organization using the deployed model in the
 AI Platform. After the prediction, the data is sent to the Big
 Query table. 
 ## Prediction by LSTM
-![image](https://github.com/bvjhansisaketa/stockmarketanalysisandprediction/blob/main/prediction_by_lstm.png)
+![image](https://github.com/jahoon1998/CU-Boulder-CSCI-6502-Big-Data-Analytics-Final-Project/blob/main/Final_project%20Jahoon_Koo_Jhansi_Saketa/images/prediction_by_lstm.png)
 ## Final Results 
-![image](https://github.com/bvjhansisaketa/stockmarketanalysisandprediction/blob/main/bigquery_results.png)
+![image](https://github.com/jahoon1998/CU-Boulder-CSCI-6502-Big-Data-Analytics-Final-Project/blob/main/Final_project%20Jahoon_Koo_Jhansi_Saketa/images/bigquery_results.png)
